@@ -1,4 +1,7 @@
-NAMES=('Silhai' 'PhAnt' 'kIk' 'ZuzKA' 'Bear' 'zA' 'Strip?' 'paj' 'joj' 'Voz')
+NAMES=()
+while IFS= read -r line; do
+    NAMES+=$line
+done<player_names.txt
 
 if [[ $1 = 'gibstats' ]]; then
 	./gibstats.sh
