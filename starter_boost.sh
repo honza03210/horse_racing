@@ -1,4 +1,8 @@
-NAMES=('lai' 'PhAnt' 'kIk' 'ZuzKA' 'Bear' 'zA' 'Strip?' 'paj' 'joj' 'Voz')
+NAMES=()
+while IFS= read -r line; do
+    line=$(echo "$line" | tr -d '\r')  # Remove carriage return (Windows newline)
+    NAMES+=("$line")
+done<player_names.txt
 
 DIST=40
 i=0;
