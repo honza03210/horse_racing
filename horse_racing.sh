@@ -8,8 +8,6 @@ fi;
 horse_upper=' ___/\'
 horse_lower='/\ /\'
 
-NAMES=('Silhai' 'PhAnt' 'kIk' 'ZuzKA' 'Bear' 'zA' 'Strip?' 'paj' 'joj' 'Voz')
-
 # NAMES are read from player_names.txt - each name on its own line
 NAMES=()
 HORSES=()
