@@ -1,8 +1,7 @@
 NAMES=()
-HORSES=()
 while IFS= read -r line; do
-    NAMES+=$line
-    HORSES+=0
+    line=$(echo "$line" | tr -d '\r')  # Remove carriage return (Windows newline)
+    NAMES+=("$line")
 done<player_names.txt
 
 printf 'Vyhry Jmeno Prumerne\n'
