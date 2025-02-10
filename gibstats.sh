@@ -1,4 +1,9 @@
-NAMES=('Silhai' 'PhAnt' 'kIk' 'ZuzKA' 'Bear' 'zA' 'Strip?' 'paj' 'joj' 'Voz')
+NAMES=()
+HORSES=()
+while IFS= read -r line; do
+    NAMES+=$line
+    HORSES+=0
+done<player_names.txt
 
 printf 'Vyhry Jmeno Prumerne\n'
 GAMES_TOTAL=0
