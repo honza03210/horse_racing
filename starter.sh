@@ -1,6 +1,7 @@
 NAMES=()
 while IFS= read -r line; do
-    NAMES+=$line
+    line=$(echo "$line" | tr -d '\r')  # Remove carriage return (Windows newline)
+    NAMES+=("$line")
 done<player_names.txt
 
 if [[ $1 = 'gibstats' ]]; then
